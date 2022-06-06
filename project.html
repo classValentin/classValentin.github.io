@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="images/Logo/logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <!-- TweenMax - GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+  </head>
+  <body>
+
+    <!-- header -->
+      <nav class="menu">
+          <div class="menu-left menu-item">
+                  <div class="brand-logo">
+                    <a href="index.html"><img class="logo" src="images/Logo/Logo_VS_black.svg"></a>
+                  </div>
+          </div>
+          <div class="menu-center menu-item">
+
+          </div>
+          <div class="menu-right menu-item">
+            <span class="menu-link"><a href="about.html" class="hover-this">About</a></span>
+            <span class="menu-link"><a href="project.html" class="hover-this-active">Project</a></span>
+          </div>
+      </nav>
+
+  <div class="Boxalles">
+    <div class="navigation-wrapper">
+      <div class="project-preview-wrapper">
+        <div class="project-preview"></div>
+      </div>
+
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-1" href="projekte/Modul.html">
+            <span class="info-link" data-text="Modularbeit">Modularbeit</span>
+          </a>
+        </li>
+        <div class="project-overlay"></div>
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-2" href="projekte/valentin.html">
+            <span class="info-link" data-text="Valentin">Valentin</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-3" href="projekte/meliorem.html">
+            <span class="info-link" data-text="Meliorem">Meliorem</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-4" href="projekte/porfolioeins.html">
+            <span class="info-link" data-text="Porfolio">Porfolio</span>
+          </a>
+        </li>
+
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-5" href="projekte/Intro.html">
+            <span class="info-link" data-text="Intro">Intro</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-6" href="projekte/Izzy.html">
+            <span class="info-link" data-text="Izzy">Izzy</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-7" href="projekte/Rasperry.html">
+            <span class="info-link" data-text="Rasperry">Rasperry</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-8" href="projekte/comingSoon.html">
+            <span class="info-link" data-text="Quiz">Quiz</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-9" href="projekte/comingSoon.html">
+            <span class="info-link" data-text="Database">Database</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+</div>
+
+<!-- Blockiert Rechtsklicks
+<script type="text/javascript">
+function click (e) {
+  if (!e)
+  e = window.event;
+  if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.Which && e.which == 3)) {
+  if (window.opera)
+      window.alert("Sorry, es ist geschützt");
+return false;
+  }
+}
+
+if (document.layers)
+  document.captureEvents(Event.MOUSEDOWN);
+  document.onemousedown = click;
+  document.oncontextmenu = click;
+
+  </script>
+-->
+<!--Animation wenn man über die Projekte geht -->
+    <script>
+      $(document).ready(function() {
+        TweenMax.set(".project-preview", { width: 0 });
+
+        var tl = new TimelineLite();
+
+        $(document)
+          .on("mouseover", ".navigation-item", function(evt) {
+            tl = new TimelineLite();
+            tl.to($(".project-preview"), 1, {
+              width: "700px",
+              ease: Expo.easeInOut
+            });
+          })
+          .on("mouseout", ".navigation-item", function(evt) {
+            tl = new TimelineLite();
+            tl.to($(".project-preview"), 0.8, {
+              width: 0,
+              ease: Expo.easeInOut
+            });
+          });
+      });
+
+      $(".navigation-link-1").hover(function() {
+        $(".project-preview").css({ "background-image": "url(images/Projekt/img-01.png)" });
+      });
+
+      $(".navigation-link-2").hover(function() {
+        $(".project-preview").css({ "background-image": "url(images/Projekt/img-02.png)" });
+      });
+
+      $(".navigation-link-3").hover(function() {
+        $(".project-preview").css({ "background-image": "url(images/Projekt/img-03.png)" });
+      });
+
+      $(".navigation-link-4").hover(function() {
+        $(".project-preview").css({ "background-image": "url(images/Projekt/img-04.png)" });
+      });
+
+      $(".navigation-link-5").hover(function() {
+        $(".project-preview").css({ "background-image": "url(images/Projekt/img-05.png)" });
+      });
+
+      $(".navigation-link-6").hover(function() {
+        $(".project-preview").css({ "background-image": "url(images/Projekt/img-06.png)" });
+      });
+
+      $(".navigation-link-7").hover(function() {
+        $(".project-preview").css({ "background-image": "url(images/Projekt/img-07.jpg)" });
+      });
+
+      $(".navigation-link-8").hover(function() {
+        $(".project-preview").css({ "background-image": "url(images/Projekt/comingSoon.png)" });
+      });
+
+      $(".navigation-link-9").hover(function() {
+        $(".project-preview").css({ "background-image": "url(images/Projekt/comingSoon.png)" });
+      });
+
+
+    </script>
+
+    <!-- ANimation by About/Home
+    <script>
+    TweenMax.to(".loader-box", 2, {
+        top: "-100%",
+        ease: Expo.easeInOut,
+        delay: 3.6
+    });
+
+    var tl = new TimelineMax();
+
+    tl.from(".loader", 1.6, {
+        scaleY: "0%",
+        y: 80,
+        ease: Expo.easeInOut,
+        delay: 1,
+        transformOrigin:"50% 100%"
+    });
+
+    tl.to(".loader", 1.6, {
+        height: "20vh",
+        scaleY: "0%",
+        ease: Expo.easeInOut,
+        transformOrigin:"0% -100%"
+    });
+    </script> -->
+
+  </body>
+</html>

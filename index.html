@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentin Str&auml;uli</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="images/Logo/logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <!-- TweenMax - GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+  </head>
+  <body>
+
+    <!-- header -->
+      <nav class="menu">
+          <div class="menu-left menu-item">
+                  <div class="brand-logo">
+                    <a href="index.html"><img class="logo" src="images/Logo/Logo_VS_black.svg"></a>
+                  </div>
+          </div>
+          <div class="menu-center menu-item">
+
+          </div>
+          <div class="menu-right menu-item">
+            <span class="menu-link"><a href="about.html" class="hover-this">About</a></span>
+            <span class="menu-link"><a href="project.html" class="hover-this">Project</a></span>
+          </div>
+      </nav>
+
+    <div class="container">
+
+        <!-- hero image  -->
+        <div class="about-img">
+            <div class="box"></div>
+            <div>
+            <a href="https://iart.ch/en/about/team/valentin-straeuli"target="_blank"><img class="image" src="images/About/me-img.JPG"></a>
+            </div>
+          </div>
+
+        <!-- about-container -->
+        <div class="about-text">
+            <p>HI I'M A COMPUTER SCIENCE STUDENT. I'M DOING AN APPRENTICESHIP AT <a class="link-a" href="https://iart.ch/en/"target="_blank">IART.</a><br><br>
+              IN THE 'PROJECT'  SECTION  YOU CAN FIND MY PREVIOUS PRIVATE WORK. Don't hesitate <a class="mailto" href="mailto:valentin.straeuli@hispeed.ch">get in touch.</a></p>
+        </div>
+
+
+
+        <!-- header  -->
+        <div class="header">
+            <h1 class="header-1">Str&auml;uli</h1>
+            <h1 class="header-2">Valentin</h1>
+        </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__social">
+          <a class="footer_general" href="mailto:valentin.straeuli@hispeed.ch">E-Mail</a>
+          <a class="footer_general"href="https://www.linkedin.com/in/valentin-cla-sträuli-9a5981218/"target="_blank">LinkedIn</a>
+          <a class="footer_general"href="https://github.com/classValentin" target="_blank">GitHub</a>
+          <a class="footer_general" href="Impressum.html" target="_blank">Impressum</a>
+        </div>
+          <p class="footer_text">Designed & Developed by Valentin Str&auml;uli ©2020</p>
+      </div>
+    </footer>
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- Blockiert Rechtsklick
+    <script type="text/javascript">
+    function click (e) {
+      if (!e)
+      e = window.event;
+      if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.Which && e.which == 3)) {
+      if (window.opera)
+          window.alert("Sorry, es ist geschützt");
+    return false;
+      }
+    }
+
+    if (document.layers)
+      document.captureEvents(Event.MOUSEDOWN);
+      document.onemousedown = click;
+      document.oncontextmenu = click;
+
+    </script> -->
+
+    <!-- ANimation by About/Home  -->
+     <script>
+     var textWrapper = document.querySelector('.header-1');
+     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+     anime.timeline()
+     .add({
+         targets: '.header-1 .letter',
+         translateY: [200,0],
+         translateZ: 0,
+         opacity: [0,1],
+         easing: "easeOutExpo",
+         duration: 2000,
+         delay: (el, i) => 4800 + 50 * i
+     });
+
+     var textWrapper = document.querySelector('.header-2');
+     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+     anime.timeline()
+     .add({
+         targets: '.header-2 .letter',
+         translateY: [200,0],
+         translateZ: 0,
+         opacity: [0,1],
+         easing: "easeOutExpo",
+         duration: 2000,
+         delay: (el, i) => 4800 + 50 * i
+     });
+
+     var tl = new TimelineMax();
+
+     TweenMax.to(".box", 1.6, {
+     y: "-100%",
+     ease: Expo.easeInOut,
+     delay: 3.8,
+     });
+
+     var tl = new TweenMax.staggerFrom(".menu > div", 2, {
+         opacity: 0,
+         y: 30,
+         ease: Expo.easeInOut,
+         delay: 4.2
+     }, 0.1);
+
+     var tl = new TweenMax.staggerFrom(".about-text", 2, {
+         opacity: 0,
+         y: 30,
+         ease: Expo.easeInOut,
+         delay: 4.2
+     }, 0.1);
+     </script>
+
+</body>
+</html>
