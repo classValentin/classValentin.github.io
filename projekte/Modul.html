@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Modularbeit 307</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+  <div class="Box-1">
+
+    <a href="../Project.html"><img class="pfeil" src="../images/Pfeil/linker-pfeil.svg" alt="Pfeil"></a>
+
+    <div class="Information">
+      <div class="Information-Title">
+        <p>School Project</p>
+      </div>
+      <div class="information-text">
+        <p>Modularbeit 307</p>
+      </div>
+    </div>
+    <div class="Information">
+      <div class="Information-Title">
+        <p>Year</p>
+      </div>
+      <div class="information-text">
+        <p>2020</p>
+      </div>
+    </div>
+    <div class="Information">
+      <div class="Information-Title">
+        <p>Languages </p>
+      </div>
+      <div class="information-text">
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>PHP</p>
+      </div>
+    </div>
+    <div class="Information">
+      <div class="Information-Title">
+        <p><a class="link" href=""target="_blank">Download Project</a></p>
+      </div>
+    </div>
+
+  </div>
+
+<div class="Box-1">
+    <div class="Content">
+      <div class="Content-Text">
+        <p>FOR THIS SCHOOL PROJECT WE HAD TO PROGRAM A WEBSITE WHERE YOU CAN CREATE/EDIT/DELETE ARTICLES WHICH ARE THEN DISPLAYED AND SORTED BY DATE. AFTER YOU CREATE AN ARTICLE IT HAs TO BE SAVED AS A .TXT FILE IN A FOLDER AND BE VISIBLE ON THE WEBSITE, THE SAME AS THE IMAGES. you should be able to change everthing within the article  WHEN EDITING AND YOU SHOULD BE ABLE TO PERMANENTLY DELETE ARTICLES TOO.</p>
+    </div>
+  </div>
+</div>
+
+  <div class="Video">
+      <video width="1000" height="575" autoplay loop muted>
+        <source src="../images/Video/Modularbeit307_new.mp4" type="video/mp4">
+      </video>
+  </div>
+
+  <!-- Blockiert Rechtsklick -->
+  <script type="text/javascript">
+  function click (e) {
+    if (!e)
+    e = window.event;
+    if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.Which && e.which == 3)) {
+    if (window.opera)
+        window.alert("Sorry, es ist geschützt");
+  return false;
+    }
+  }
+
+  if (document.layers)
+    document.captureEvents(Event.MOUSEDOWN);
+    document.onemousedown = click;
+    document.oncontextmenu = click;
+
+    </script>
+
+  </body>
+</html>

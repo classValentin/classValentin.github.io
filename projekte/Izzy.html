@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Izzy Portfolio</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+  <div class="Box-1">
+
+    <a href="../Project.html"><img class="pfeil" src="../images/Pfeil/linker-pfeil.svg" alt="Pfeil"></a>
+
+    <div class="Information">
+      <div class="Information-Title">
+        <p>Private Project</p>
+      </div>
+      <div class="information-text">
+        <p>Izzy Portfolio</p>
+      </div>
+    </div>
+    <div class="Information">
+      <div class="Information-Title">
+        <p>Year</p>
+      </div>
+      <div class="information-text">
+        <p>2021</p>
+      </div>
+    </div>
+    <div class="Information">
+      <div class="Information-Title">
+        <p>Languages </p>
+      </div>
+      <div class="information-text">
+        <p>HTML</p>
+        <p>CSS</p>
+      </div>
+    </div>
+    <div class="Information">
+      <div class="Information-Title">
+        <p><a class="link" href=""target="_blank">Download Project</a></p>
+      </div>
+    </div>
+
+  </div>
+
+<div class="Box-1">
+    <div class="Content">
+      <div class="Content-Text">
+        <p>A colleague ASKed ME to create a website that she can show to potential employers in the future, and so I accepted this challenge. I had complete creative freedom as she had no design ideas in mind for this website, she only specified the information that i needed to incude. I DESIGN FIRST THE WEBSITE exactly how I LIKED IT AND then disscussed with her any small changes that she wanted to be made. I WANTed to KEEP it SIMPLE SO I JUST PROGRAMM using HTML AND CSS. AFTER I finished the design I CODEd THE WEBSITe I am pleased with the results.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="Video">
+      <video width="1000" height="575" autoplay loop muted>
+        <source src="../images/Video/Izzy_new.mp4" type="video/mp4">
+      </video>
+  </div>
+
+  <!-- Blockiert Rechtsklick -->
+  <script type="text/javascript">
+  function click (e) {
+    if (!e)
+    e = window.event;
+    if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.Which && e.which == 3)) {
+    if (window.opera)
+        window.alert("Sorry, es ist geschützt");
+  return false;
+    }
+  }
+
+  if (document.layers)
+    document.captureEvents(Event.MOUSEDOWN);
+    document.onemousedown = click;
+    document.oncontextmenu = click;
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,815 @@
+   html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+/* nav  */
+
+nav {
+  width: 80%;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: 'Notable', sans-serif;
+  font-size: 15px;
+}
+
+.menu-item {
+  flex: 1;
+}
+
+.menu-left {
+  text-align: left;
+}
+
+.menu-right {
+  text-align: right;
+}
+
+.menu-link {
+  padding: 0 30px;
+}
+
+.hover-this-active {
+  text-decoration: none;
+  color: #A66FFE;
+}
+
+.hover-this {
+  text-decoration: none;
+  color: black;
+}
+
+.hover-this:hover {
+  color: #A66FFE;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+/* hero img  */
+.about-img {
+  overflow: hidden;
+  position: relative;
+  top: 50% !important;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 90%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box {
+  background: white;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+/* header  */
+
+.header {
+  position: absolute;
+  top: 52%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.header h1 {
+  font-family: 'Notable', sans-serif;
+  font-size: 34px;
+  text-transform: uppercase;
+  margin: 0;
+  mix-blend-mode: overlay;
+}
+
+.header-1 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.header-2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+/* about-container */
+.about-text {
+  font-family: 'Noto Serif KR', serif;
+  padding: 20px;
+}
+
+.link {
+  color: #000;
+}
+
+.link-a {
+  color: #000;
+}
+
+.link:hover {
+  color: #A66FFE;
+}
+
+.mailto {
+  color: #000;
+}
+
+.mailto:hover {
+  color: #A66FFE;
+}
+
+
+/* Project */
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.Boxalles {
+  height: 110%;
+  width: auto;
+}
+
+.navigation-wrapper ul {
+  list-style: none;
+  position: absolute;
+}
+
+.navigation-item {
+  display: block;
+  user-select: none;
+  margin: 50px 0;
+}
+
+.navigation-link {
+  font-size: 36px;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Notable', sans-serif;
+}
+
+.info-link {
+  position: relative;
+  display: block;
+}
+
+.navigation-item .info-link:before {
+  width: 0;
+  color: #A66FFE;
+  overflow: hidden;
+  position: absolute;
+  content: attr(data-text);
+  transition: all 1s cubic-bezier(0.84, 0, 0.08, 0.99);
+}
+
+.navigation-item .info-link:hover:before {
+  width: 100%;
+}
+
+/* Modul.html */
+.Box-1 {
+  float: left;
+  width: 37%;
+}
+
+.pfeil {
+  width: 25%;
+  height: auto;
+  padding: 20px;
+}
+
+.Information {
+  padding: 10px 30px 10px 30px;
+  text-transform: uppercase;
+}
+.Information-Title {
+  font-size: 23px;
+  font-family: 'Notable', sans-serif;
+}
+
+.information-text {
+  font-size: 20px;
+  font-family: 'Notable', sans-serif;
+}
+
+.Content {
+  padding: 187px 30px 10px 30px;
+  text-transform: uppercase;
+  width: 200%;
+}
+
+.Content-Text {
+  font-size: 25px;
+  font-family: 'Noto Serif KR', serif;
+}
+
+.Video, .link{
+  display: none;
+}
+
+/* about */
+/* section-header */
+.section-header .section-header-container {
+	display: -webkit-;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 12px 0;
+	font-size: 16px;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.section-title {
+  padding-left: 15px;
+  font-size: 25px;
+}
+
+.section-order {
+  padding-right: 15px;
+  font-size: 25px;
+}
+
+/* about */
+
+.about {
+	width: 100%;
+}
+
+.about::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.about .about-container {
+	width: 70%;
+	float: right;
+}
+
+.about .about-container p {
+	margin: 40px 0;
+	font-size: 36px;
+  padding: 15px;
+  font-family: 'Noto Serif KR', serif;
+  text-transform: uppercase;
+}
+
+/* clients */
+
+.language .language-container p {
+	font-family: 'Notable', sans-serif;
+	font-size: 80px;
+	line-height: 100px;
+  padding: 15px
+}
+
+/* divider */
+.divider {
+	width: 100%;
+	height: 2px;
+	background: #000;
+}
+
+/* divider */
+.whitespace {
+	width: 100%;
+	height: 80px;
+}
+
+
+/* footer */
+
+.footer {
+  border-top: 2px solid #000;
+  margin-top: 33px;
+  padding: 33px;
+  text-align: center;
+}
+
+.footer__content {
+  text-align: left;
+  position: left;
+  text-transform: uppercase;
+}
+
+.footer__content::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.footer_text {
+  font-family: 'Notable', sans-serif;
+  font-size: 15px
+  float: right;
+}
+
+.footer__social {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer_general {
+  width: 40px;
+  height: auto;
+  font-family: 'Notable', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 14px;
+}
+
+.footer_general:hover {
+  color: #A66FFE;
+  }
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* Medium devices (tablets, 768px and up) - Valentin Sträuli*/
+@media (min-width: 768px) {
+/* nav  */
+.menu {
+  height: 220px;
+}
+
+.menu-right{
+  font-size: 25px;
+}
+
+.header {
+  top: 76%;
+}
+
+.header h1 {
+  font-size: 65px;
+}
+/* about-container */
+.about-text {
+  padding: 35px;
+  padding-left: 55px;
+  }
+}
+
+.link{
+  display: none;
+}
+
+/* about */
+/* about */
+.about .about-container {
+  width: 100%;
+}
+.about .about-container p {
+  font-size: 24px;
+}
+
+/* language */
+.language .language-container p {
+  font-size: 36px;
+  line-height: 50px;
+  text-align: justify;
+}
+
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* Large devices (desktops, 992px and up) - Valentin Sträuli*/
+@media (min-width: 992px) {
+/* nav  */
+  .menu {
+    height: 345px;
+  }
+
+  .menu-right{
+    font-size: 35px;
+  }
+
+  .logo {
+    width: 80%;
+  }
+
+  .header {
+    top: 145%;
+  }
+
+  .header h1 {
+    font-size: 96px;
+  }
+
+/* about-container */
+  .about-text{
+    padding: 35px;
+    font-size: 21px;
+    padding-left: 55px;
+  }
+
+  .navigation-link {
+    font-size: 100px;
+  }
+
+  .link{
+    display: none;
+  }
+
+  .Video{
+    display: block;
+  }
+
+/* footer */
+
+.footer_text {
+  width: 16%;
+  float: right;
+}
+
+.footer__social {
+  width: calc(100% - 200px);
+  padding-top: 30px;
+}
+
+.footer_general {
+  padding: 10px;
+  font-size: 20px;
+}
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+@media (min-width: 1024px) {
+/* nav  */
+  .menu {
+    height: 345px;
+  }
+
+  .menu-right{
+    font-size: 35px;
+  }
+
+  .logo {
+    width: 80%;
+  }
+
+  .header {
+    top: 80%;
+  }
+
+  .header h1 {
+    font-size: 96px;
+  }
+
+/* about-container */
+  .about-text{
+    padding: 35px;
+    font-size: 21px;
+    padding-left: 55px;
+  }
+
+  .navigation-link {
+    font-size: 100px;
+  }
+
+/* footer */
+
+.footer_text {
+  width: 16%;
+  float: right;
+}
+
+.footer__social {
+  width: calc(100% - 200px);
+  padding-top: 30px;
+}
+
+.footer_general {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.link{
+  display: none;
+  }
+
+  .Video{
+    display: block;
+    padding: 85px;
+  }
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* X-Large devices (large desktops, 1200px and up) - Valentin Sträuli*/
+@media (min-width: 1200px) {
+/* NAV */
+.menu {
+  font-size: 20px;
+}
+
+.menu-right{
+  font-size: 35px;
+}
+
+.logo {
+  width: 60%;
+}
+
+/* hero img  */
+.about-img {
+  width: 30%;
+  height: 90vh;
+}
+
+/* header  */
+.header {
+  top: 67%;
+}
+
+.header h1 {
+  font-size: 75px;
+}
+
+/* about-container */
+.about-text {
+  float: right;
+  text-align: left;
+  top: 35%;
+  right: 2%;
+  position: absolute;
+  font-size: 27px;
+  width: 30%;
+  text-transform: uppercase;
+}
+
+/* media queries  */
+
+@media (max-width: 900px) {
+  .about-img {
+    width: 90%;
+  }
+  .header {
+    top: 50%;
+    left: 50%;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 40px;
+  }
+
+  .projects,
+  .img-nav {
+    display: none;
+  }
+
+  hover-this {
+        width: 100%;
+        padding: 20px 0;
+        display: inline-block;
+  }
+}
+
+/* Project */
+
+.Boxalles {
+  height: 165%;
+}
+
+.navigation-item {
+  margin: 120px 0;
+}
+
+.navigation-link {
+  font-size: 100px;
+}
+
+.project-preview-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+.project-preview {
+  position: fixed;
+  top: 12%;
+  left: 50%;
+  width: 0px;
+  height: 400px;
+  background: url(img-1.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .progressbar,
+  .project-preview-wrapper {
+    display: none;
+  }
+}
+
+/* Modul.html */
+.Box-1 {
+  float: left;
+  width: 30%;
+}
+
+.pfeil {
+  width: 20%;
+}
+
+.link {
+  display: none;
+}
+
+.Video{
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 140px;
+}
+
+/* footer */
+
+.footer_text {
+  width: 16%;
+  float: right;
+}
+
+.footer__social {
+  width: calc(100% - 500px);
+  padding-top: 30px;
+}
+
+.footer_general {
+  padding: 10px;
+  font-size: 20px;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* X-Large devices (large desktops, 1200px and up) - Valentin Sträuli*/
+@media (min-width: 1920px) {
+/* NAV */
+.menu {
+  font-size: 20px;
+}
+
+.menu-right{
+  font-size: 35px;
+}
+
+.logo {
+  width: 60%;
+}
+
+/* hero img  */
+.about-img {
+  width: 30%;
+  height: 90vh;
+}
+
+/* header  */
+.header {
+  top: 72%;
+}
+
+.header h1 {
+  font-size: 75px;
+}
+
+/* about-container */
+.about-text {
+  float: right;
+  text-align: left;
+  top: 40%;
+  right: 2%;
+  position: absolute;
+  font-size: 27px;
+  width: 30%;
+  text-transform: uppercase;
+}
+
+/* media queries  */
+
+@media (max-width: 900px) {
+  .about-img {
+    width: 90%;
+  }
+  .header {
+    top: 50%;
+    left: 50%;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 40px;
+  }
+
+  .projects,
+  .img-nav {
+    display: none;
+  }
+
+  hover-this {
+        width: 100%;
+        padding: 20px 0;
+        display: inline-block;
+  }
+}
+
+/* Project */
+
+.Boxalles {
+  height: 165%;
+}
+
+.navigation-item {
+  margin: 120px 0;
+}
+
+.navigation-link {
+  font-size: 100px;
+}
+
+.project-preview-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+.project-preview {
+  position: fixed;
+  top: 12%;
+  left: 50%;
+  width: 0px;
+  height: 400px;
+  background: url(img-1.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .progressbar,
+  .project-preview-wrapper {
+    display: none;
+  }
+}
+
+/* Modul.html */
+.Box-1 {
+  float: left;
+  width: 30%;
+}
+
+.pfeil {
+  width: 20%;
+}
+
+.link {
+  display: block;
+}
+
+.Video{
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 140px;
+}
+
+/* footer */
+
+.footer_text {
+  width: 16%;
+  float: right;
+}
+
+.footer__social {
+  width: calc(100% - 500px);
+  padding-top: 30px;
+}
+
+.footer_general {
+  padding: 10px;
+  font-size: 20px;
+}
