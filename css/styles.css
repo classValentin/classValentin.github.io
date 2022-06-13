@@ -120,11 +120,15 @@ img {
   color: #000;
 }
 
+.link:hover {
+  color: #A66FFE;
+}
+
 .link-a {
   color: #000;
 }
 
-.link:hover {
+.link-a:hover {
   color: #A66FFE;
 }
 
