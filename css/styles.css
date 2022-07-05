@@ -350,7 +350,7 @@ img {
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 /* Medium devices (tablets, 768px and up) - Valentin Sträuli*/
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 /* nav  */
 .menu {
   height: 220px;
@@ -399,7 +399,7 @@ img {
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 /* Large devices (desktops, 992px and up) - Valentin Sträuli*/
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
 /* nav  */
   .menu {
     height: 345px;
@@ -460,7 +460,7 @@ img {
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
 /* nav  */
   .menu {
     height: 345px;
@@ -523,7 +523,7 @@ img {
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 /* X-Large devices (large desktops, 1200px and up) - Valentin Sträuli*/
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 /* NAV */
 .menu {
   font-size: 20px;
@@ -566,7 +566,7 @@ img {
 
 /* media queries  */
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .about-img {
     width: 90%;
   }
@@ -624,7 +624,7 @@ img {
   overflow: hidden;
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .progressbar,
   .project-preview-wrapper {
     display: none;
@@ -672,7 +672,7 @@ img {
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 /* X-Large devices (large desktops, 1200px and up) - Valentin Sträuli*/
-@media (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {
 /* NAV */
 .menu {
   font-size: 20px;
@@ -715,7 +715,7 @@ img {
 
 /* media queries  */
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .about-img {
     width: 90%;
   }
@@ -773,7 +773,7 @@ img {
   overflow: hidden;
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .progressbar,
   .project-preview-wrapper {
     display: none;
