@@ -682,8 +682,13 @@ nav {
   position: relative;
   left: 49%;
   transform: translate(-50%, 0%);
-  width: 90%;
+  width: 72%;
   padding-top: 100px;
+}
+
+.about__text {
+ flaot: right;
+ width: 60%;
 }
 
 .skils__items {
