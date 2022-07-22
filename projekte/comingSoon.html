@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Coming Soon</title>
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="icon" type="image/png" href="../images/Logo/logo.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,9 +15,31 @@
   <body>
 
   <div class="pfeilBox">
-    <a href="../Project.html"><img class="pfeil" src="../images/Pfeil/linker-pfeil.svg" alt="Pfeil"></a>
+    <a href="../project.html"><img class="pfeil" src="../images/Pfeil/linker-pfeil.svg" alt="Pfeil"></a>
   </div>
 
   <div class="comingSoonBox">
     <p class="comingSoon-text">Soon Alive</p>
   </div>
+
+  <!-- Blockiert Rechtsklick -->
+  <script type="text/javascript">
+  function click (e) {
+    if (!e)
+    e = window.event;
+    if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.Which && e.which == 3)) {
+    if (window.opera)
+        window.alert("Sorry, es ist geschützt");
+  return false;
+    }
+  }
+
+  if (document.layers)
+    document.captureEvents(Event.MOUSEDOWN);
+    document.onemousedown = click;
+    document.oncontextmenu = click;
+
+  </script> 
+  
+  </body>
+</html>
